@@ -4,6 +4,25 @@
     </head>
     <body>
         <script src="insertion_sort.js"></script>
-        <button onclick="insertion_sort()">Executar insertion sort</button>
+        <div>
+            <p>Insira números separados por vírgula:</p>
+            <input type="text" id="numeros">
+            <button onclick="pega_numeros()">Executar insertion sort</button>
+        </div>
+        <hr>
+        <div>
+            <p>Insira a quantidade de números aleatorios que devem ser ordenados:</p>
+            <input type="number" id="quantidade_numeros">
+            <button onclick="numeros_aleatorios()">Executar insertion sort com N numeros aleatorios</button>
+            <button onclick="melhor_caso()">Executar insertion sort com N numeros para o melhor caso</button>
+            <button onclick="pior_caso()">Executar insertion sort com N numeros para o pior caso</button>
+        </div>
+        <hr>
+        <h4>Entrada: </h4>
+        <p id="entrada"></p>
+        <h4>Saida ordenada: </h4>
+        <p id="resultado"></p>
+        <h4>Quantidade de comandos executados:</h4>
+        <p id="quantidade_comandos"></p>
     </body>
 </html>
